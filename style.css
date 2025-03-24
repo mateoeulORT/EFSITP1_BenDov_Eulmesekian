@@ -1,22 +1,75 @@
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
 }
 
 body{
-    display: flex;
-    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
 }
 
 main{
-    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    background: linear-gradient(rgb(122, 0, 67),rgb(221, 0, 192), rgb(111, 1, 214));
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 0;  
+    margin-bottom: 2%;
+    font-size: 6vh;
 }
 
 .login-box{
-    border: 1px solid gray;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    width: 40%;
     border-radius: 20px;
+    padding: 3%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
 }
+
+.campos-form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 3%;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.error{
+    color: red;
+    font-size:x-small;
+    margin-top: 0;
+}
+
+button{
+    margin-top: 5%;
+}
+
+
+input{
+    width: 80%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:focus{
+    outline: none;
+    border-color: #ff00ff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.3);
+  }

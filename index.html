@@ -3,27 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EFSI</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-
 
     <header></header>
 
     <main>
-        
+        <div class="tech-background"></div>
+        <div class="lines"></div>
+
         <img src="logo.png" alt="">
         <div class="login-box">
-            <h2>Iniciar sesión</h2>
+            <h1>Iniciar sesión</h1>
+
             <form action="" method="post" class="">
-                <p>Nombre completo:</p> <input  id="nombre" onkeyup="validarLargo ()">
-                <p>Email:</p> <input  id="email" onkeyup="validarEmail ()">
-                <p>Contraseña:</p> <input type="password">
-                <p>Confirmar contraseña:</p> <input type="password">
+                <div class="campos-form"> 
+                    <p>Nombre completo:</p>
+                    <input  id="nombre" onkeyup="validarLargo ()" autocomplete="off">
+                    <p class="error" id="mensaje-nombre"></p>       
+                </div> 
+                
+                <div class="campos-form">
+                    <p>Email:</p>
+                    <input  id="email" onkeyup="validarEmail ()" autocomplete="off"> 
+                    <p class="error" id="mensaje-email"></p>        
+                </div>
+
+                <div class="campos-form">
+                    <p>Contraseña:</p>
+                    <input id="contraseña" type="password" onkeyup="validarContraseña ()" autocomplete="off">
+                    <p class="error" id="mensaje-contraseña"></p>   
+                </div>
+
+                <div class="campos-form">
+                    <p>Confirmar contraseña:</p>
+                    <input id="contraseña2" type="password" onkeyup="validarContraseña2 ()" autocomplete="off">
+                    <p class="error" id="mensaje-contraseña2"></p>
+                </div>
+
                 <button>Enviar</button>
-    
             </form>
     
         </div>
