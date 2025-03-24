@@ -19,7 +19,7 @@
         <div class="login-box">
             <h1>Iniciar sesión</h1>
 
-            <form action="" method="post" class="">
+            <form action="" id="formulario" class="">
                 <div class="campos-form"> 
                     <p>Nombre completo:</p>
                     <input  id="nombre" onkeyup="validarLargo ()" autocomplete="off">
@@ -44,7 +44,8 @@
                     <p class="error" id="mensaje-contraseña2"></p>
                 </div>
 
-                <button>Enviar</button>
+                <button type="submit">Enviar</button>
+                <p class="error" id="mensaje-envio"></p>  
             </form>
     
         </div>
