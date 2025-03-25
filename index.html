@@ -12,9 +12,6 @@
     <header></header>
 
     <main>
-        <div class="tech-background"></div>
-        <div class="lines"></div>
-
         <img src="logo.png" alt="">
         <div class="login-box">
             <h1>Iniciar sesión</h1>
@@ -40,11 +37,11 @@
 
                 <div class="campos-form">
                     <p>Confirmar contraseña:</p>
-                    <input id="contraseña2" type="password" onkeyup="validarContraseña2 ()" autocomplete="off">
+                    <input id="contraseña2" type="password" onkeyup="validarContraseña2(document.getElementById('contraseña').value)" autocomplete="off">
                     <p class="error" id="mensaje-contraseña2"></p>
                 </div>
 
-                <button type="submit">Enviar</button>
+                <button type="submit">ENVIAR</button>
                 <p class="error" id="mensaje-envio"></p>  
             </form>
     
