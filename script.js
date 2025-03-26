@@ -1,9 +1,10 @@
-document.getElementById("formulario").addEventListener('submit',function(event){
+document.getElementById("formulario").addEventListener('submit',function (event){
 
     let contraseña = validarContraseña()
 
     if (validarLargo() && validarEmail() && contraseña != "" && validarContraseña2(contraseña)) {
- 
+        
+        alert("Registro completado exitosamente")
     } 
     else{   
         event.preventDefault();
@@ -66,6 +67,7 @@ function validarContraseña(){
     let mensaje = document.getElementById('mensaje-contraseña');
     let inputContraseña = document.getElementById('contraseña');
 
+    validarContraseña2(ingreso)
 
     if (ingreso.length == 0) {
         inputContraseña.style.borderColor = "";
